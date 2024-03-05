@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validação Formulário</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Comparação de números </h1>
+        <h2>B>A</h2>
+        <form id="form-validate">
+            <input type="number" id="first-number" required placeholder="Valor A" />
+            <input type="number" id="second-number" required placeholder="Valor B" />
+            <button type="submit">Validar</button>
+        </form>
+        <div class="error" style="display: none;">B deve ser maior que A e não podem ser iguais.</div>
+        <div class="final-result" style="display: none;"></div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
